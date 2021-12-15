@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="hi">Close</button>
     <script>
         const socket = new WebSocket( 'ws://localhost:8080/' );
         socket.onopen = function ( e ){
@@ -20,8 +19,6 @@
         socket.onclose = function() {
             socket.send( 'a user left' );
         }
-
-        
     </script>
 </body>
 </html>
